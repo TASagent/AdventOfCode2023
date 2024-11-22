@@ -1,13 +1,17 @@
 ﻿const string inputFile = @"../../../../input09.txt";
 
-Console.WriteLine("Day 09 - ???");
+Console.WriteLine("Day 09 - Mirage Maintenance");
 Console.WriteLine("Star 1");
 Console.WriteLine();
 
-//string[] lines = File.ReadAllLines(inputFile);
-//string line = File.ReadAllText(inputFile);
+string[] lines = File.ReadAllLines(inputFile);
 
-int value = 0;
+List<long> newElements = new List<long>();
+
+foreach (string line in lines)
+{
+    newElements.Add(FindNextElement(line));
+}
 
 Console.WriteLine($"The answer is: {value}");
 
@@ -21,3 +25,10 @@ Console.WriteLine($"The answer is: {value2}");
 
 Console.WriteLine();
 Console.ReadKey();
+
+
+//Approach: Iterate, pushing old lists into stack, until elements are all 0
+long FindNextElement(string line)
+{
+    IEnumerable<>
+}

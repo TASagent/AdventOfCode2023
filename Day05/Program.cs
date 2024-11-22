@@ -58,7 +58,7 @@ Console.WriteLine();
 
 for (int i = 0; i < MAPPING_COUNT; i++)
 {
-    mappings[layerNum].Sort((x, y) => x.SourceStart.CompareTo(y.SourceStart));
+    mappings[i].Sort((x, y) => x.SourceStart.CompareTo(y.SourceStart));
 }
 
 List<(long start, long range)> startingRanges = new List<(long start, long range)>();

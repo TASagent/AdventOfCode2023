@@ -212,6 +212,11 @@ public static class AoCMath
         return a;
     }
 
+    public static long LCM(long a, long b)
+    {
+        return (a * b) / GCD(a, b); 
+    }
+
     #region BigInteger
 
     public static BigInteger PositiveMod(in BigInteger value, in BigInteger baseValue) =>
