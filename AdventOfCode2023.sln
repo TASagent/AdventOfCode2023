@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day08 - Haunted Wasteland",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day09 - Mirage Maintenance", "Day09\Day09 - Mirage Maintenance.csproj", "{DEA626D7-1DF0-480B-B99F-6BF3CB40D370}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day10", "Day10\Day10.csproj", "{6EC26F05-1119-4B2B-862E-53260A5CA820}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day10 - Pipe Maze", "Day10\Day10 - Pipe Maze.csproj", "{6EC26F05-1119-4B2B-862E-53260A5CA820}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day11", "Day11\Day11.csproj", "{33346425-4E88-4677-8CEB-4444C0988B1D}"
 EndProject
