@@ -1,6 +1,6 @@
 ﻿const string inputFile = @"../../../../input12.txt";
 
-Console.WriteLine("Day 12 - ???");
+Console.WriteLine("Day 12 - Hot Springs");
 Console.WriteLine("Star 1");
 Console.WriteLine();
 

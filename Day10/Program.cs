@@ -63,9 +63,33 @@ for (int x = UpperLeft.x + 1; x < BottomRight.x; x++)
         //Found an empty spot
 
         int pipeCount = 0;
+        char lastChar = '\0';
         for (int checkX = UpperLeft.x; checkX < x; checkX++)
         {
-            if (distanceMap.ContainsKey((checkX, y)) && lines[y][checkX] != '-') pipeCount++;
+            if (distanceMap.ContainsKey((checkX, y)))
+            {
+                switch (lines[y][checkX])
+                {
+                    case '-': break;
+
+                    case '|':
+                        pipeCount++;
+                        break;
+
+                    case 'L':
+                    case 'F':
+                        lastChar = lines[y][checkX];
+                        break;
+
+                    case 'J':
+                        if (lastChar == 'F') pipeCount++;
+                        break;
+
+                    case '7':
+                        if (lastChar == 'L') pipeCount++;
+                        break;
+                }
+            }
         }
 
         if (pipeCount % 2 == 0) continue;
@@ -73,7 +97,31 @@ for (int x = UpperLeft.x + 1; x < BottomRight.x; x++)
         pipeCount = 0;
         for (int checkY = UpperLeft.y; checkY < y; checkY++)
         {
-            if (distanceMap.ContainsKey((x, checkY)) && lines[checkY][x] != '|') pipeCount++;
+            if (distanceMap.ContainsKey((x, checkY)))
+            {
+
+                switch (lines[checkY][x])
+                {
+                    case '|': break;
+
+                    case '-':
+                        pipeCount++;
+                        break;
+
+                    case '7':
+                    case 'F':
+                        lastChar = lines[checkY][x];
+                        break;
+
+                    case 'J':
+                        if (lastChar == 'F') pipeCount++;
+                        break;
+
+                    case 'L':
+                        if (lastChar == '7') pipeCount++;
+                        break;
+                }
+            }
         }
 
         if (pipeCount % 2 == 0) continue;

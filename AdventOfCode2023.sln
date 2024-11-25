@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day09 - Mirage Maintenance"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day10 - Pipe Maze", "Day10\Day10 - Pipe Maze.csproj", "{6EC26F05-1119-4B2B-862E-53260A5CA820}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day11", "Day11\Day11.csproj", "{33346425-4E88-4677-8CEB-4444C0988B1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day11 - Cosmic Expansion", "Day11\Day11 - Cosmic Expansion.csproj", "{33346425-4E88-4677-8CEB-4444C0988B1D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day12", "Day12\Day12.csproj", "{6DC9F730-F708-4576-86AE-1EF7AEAF7C4B}"
 EndProject
@@ -68,6 +68,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		input09.txt = input09.txt
 		input10.txt = input10.txt
 		input11.txt = input11.txt
+		input11ex.txt = input11ex.txt
 		input12.txt = input12.txt
 		input13.txt = input13.txt
 		input14.txt = input14.txt
